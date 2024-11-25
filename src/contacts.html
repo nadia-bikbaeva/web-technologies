@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Telegram - Главная</title>
+    <title>Telegram - Контакты</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap">
     <link rel="stylesheet" href="/src/assets/styles/style.css">
 </head>
@@ -24,14 +24,34 @@
     </header>
 
     <main>
-        <h1 class="main-title">Telegram</h1>
-        <p class="text">Telegram — это быстрый, безопасный и бесплатный мессенджер.</p>
-        <h3 class="section-title">О Telegram</h3>
-        <h4 class="sub-title">Мы защищаем вашу конфиденциальность</h4>
-        <p class="text">Telegram использует шифрование для защиты ваших сообщений.</p>
-        <h3 class="section-title">Наши преимущества</h3>
-        <p class="text">Быстрый, безопасный, бесплатный и доступный на всех платформах.</p>
-        <hr>
+        <h2 class="contact-title">Contact Us</h2>
+        <p class="text">Свяжитесь с нами</p>
+        <img src="/src/assets/img/telegram-contact.png" alt="Telegram Контакты" width="350">
+        <h4 class="sub-title">Address</h4>
+        <p class="text">Москва</p>
+        <h4 class="sub-title">Phone</h4>
+        <ul>
+            <li>+7 (123) 456-78-90</li>
+            <li>+7 (987) 654-32-10</li>
+        </ul>
+        <h4 class="sub-title">Online service</h4>
+        <ul>
+            <li><a href="https://telegram.org">telegram.org</a></li>
+            <li><a href="mailto:info@telegram.org">info@telegram.org</a></li>
+        </ul>
+        <h4 class="sub-title">Send us message</h4>
+        <form action="#" method="post">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" class="input-field" required>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="input-field" required>
+            <br>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" class="input-field" required></textarea>
+            <br>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
     </main>
 
     <footer>
