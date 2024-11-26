@@ -30,3 +30,12 @@
     font-weight: 400;
     font-style: italic;
 }
+
+@font-face {
+    font-family: "Inter2";
+    src: local('Inter'), local('Inter-Italic'), local('Inter Italic'),
+         url("/static/fonts/Inter-Italic.ttf") format("truetype"),
+         url("/static/fonts/Inter-Italic.woff2") format("woff");
+    font-weight: 400;
+    font-style: italic;
+}
