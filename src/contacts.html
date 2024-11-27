@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Telegram - Контакты</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap">
+    <link rel="stylesheet" href="/src/assets/styles/style.css">
+</head>
+<body>
+    <header>
+        <ul class = "breadcrumbs">
+            <img src="/src/assets/icons/logo.png" alt="Telegram Логотип" class="logo">
+            <li class="breadcrumbs-item"><a href = "index.html">Главная страница</a></li>
+            <li class="breadcrumbs-item"><a href = "contacts.html">Контакты</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <h2 class="contact-title">Contact Us</h2>
+        <p class="text">Свяжитесь с нами</p>
+        <img src="/src/assets/img/telegram-contact.png" alt="Telegram Контакты" height="100" width="150">
+        <h4 class="sub-title">Address</h4>
+        <p class="text">Москва</p>
+        <h4 class="sub-title">Phone</h4>
+        <ul>
+            <li>+7 (123) 456-78-90</li>
+            <li>+7 (987) 654-32-10</li>
+        </ul>
+        <h4 class="sub-title">Online service</h4>
+        <ul>
+            <li><a href="https://telegram.org">telegram.org</a></li>
+            <li><a href="mailto:info@telegram.org">info@telegram.org</a></li>
+        </ul>
+        <h4 class="sub-title">Send us message</h4>
+        <form>
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" class="input-field" required>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="input-field" required>
+            <br>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" class="input-field" required></textarea>
+            <br>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <h3 class="footer-title">Контакты</h3>
+        <p class="text">Свяжитесь с нами для получения дополнительной информации.</p>
+        <hr>
+        <ul>
+            <li>Адрес: Москва, ул. Пушкина, д. 10</li>
+            <li>Телефон: +7 (123) 456-78-90</li>
+            <li>Email: info@telegram.org</li>
+        </ul>
+        <p class="text">Все права защищены.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
