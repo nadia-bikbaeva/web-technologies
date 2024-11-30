@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
+    <link rel="stylesheet" href="web-technologies-2024mm/src/assets/styles/style.css">
 </head>
-<body>
+<body class="contacts">
 <!-- Шапка сайта -->
 <header>
     <img src="web-technologies-2024mm/src/logo.png" alt="Логотип" style="width: 100px;">
+    <nav class="breadcrumbs">
+        <a href="#" class="breadcrumb">Раз</a>
+        <a href="#" class="breadcrumb">Два</a>
+        <a href="#" class="breadcrumb">Три</a>
+        <span class="breadcrumb current">Четыре</span>
+    </nav>
     <nav>
         <ul>
             <li><a href="index.html">Главная</a></li>
@@ -21,7 +28,7 @@
 <main>
     <h2>Contact Us</h2>
     <p>Контактный текст</p>
-    <img src="web-technologies-2024mm/src/icon.png" alt="Пример изображения" style="width: 350px;">
+    <img src="web-technologies-2024mm/src/icon.png" alt="Пример изображения" style="width: 35px;">
 
     <h4>Address</h4>
     <p>Краткий адрес</p>
@@ -49,7 +56,7 @@
         <label for="message">Message:</label>
         <textarea id="message" name="message"></textarea><br><br>
 
-        <button type="submit">Submit</button>
+        <button class="submit-btn" type="submit">Submit</button>
     </form>
 </main>
 
