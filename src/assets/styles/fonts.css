@@ -15,9 +15,31 @@
 }
 
 @font-face {
-    font-family: "Inter";
-    src: local('Inter'), local('Inter-Regular'), local('Inter Regular'),
-         url("/static/fonts/Inter-Regular.ttf") format("truetype"),
-         url("/static/fonts/Inter-Regular.woff2") format("woff");
+    font-family: 'Open Sans';
+    src: url('/static/fonts/VesperLibre-Medium.ttf') format('ttf');
     font-weight: 400;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/static/fonts/VesperLibre-Bold.ttf') format('ttf');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/static/fonts/VesperLibre-Black.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/static/fonts/VesperLibre-Regular.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
