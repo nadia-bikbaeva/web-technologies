@@ -1,11 +1,42 @@
-@import "./global.css";
-@import "./fonts.css";
-@import "./utils.css";
-
-.test {
-    color: yellow !important;
+.posts {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-.test {
-    color: red !important;
+.posts__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.posts__pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.post-item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    border: 1px solid black;
+}
+
+.post-item__title {
+    margin: 0;
+}
+
+.posts__pagination-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.posts__pagination-item-active {
+    background-color: black;
+    color: white;
 }

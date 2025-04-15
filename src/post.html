@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Пост</title>
+</head>
+<body>
+    <div id="post">
+        <h2 id="post-title"></h2>
+        <p id="post-body"></p>
+
+        <h3>Комментарии:</h3>
+        <ul id="comments"></ul>
+    </div>
+
+    <script type="module">
+        async function fetchPostAndComments() {
+            const url = new URL(window.location.href);
+            const id = url.searchParams.get('id');
+
+            if (!id) {
+                document.body.innerHTML = '<p>Пост не найден.</p>';
+                return;
+            }
+
+            try {
+                const postRes = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
+                if (!postRes.ok) throw new Error('Ошибка загрузки поста');
+                const post = await postRes.json();
+
+                document.getElementById('post-title').textContent = post.title;
+                document.getElementById('post-body').textContent = post.body;
+
+                const commentsRes = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`);
+                if (!commentsRes.ok) throw new Error('Ошибка загрузки комментариев');
+                const comments = await commentsRes.json();
+
+                const commentsContainer = document.getElementById('comments');
+                comments.forEach(comment => {
+                    const li = document.createElement('li');
+                    li.textContent = `${comment.name} (${comment.email}): ${comment.body}`;
+                    commentsContainer.appendChild(li);
+                });
+            } catch (error) {
+                document.body.innerHTML = `<p>Произошла ошибка: ${error.message}</p>`;
+            }
+        }
+
+        fetchPostAndComments();
+    </script>
+</body>
+</html>
