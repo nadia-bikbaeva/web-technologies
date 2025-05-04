@@ -5,14 +5,55 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="/src/assets/styles/style.css">
+    <title>Do-do pizza</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
-<div class="test" style="color: blue">
-    test
-</div>
-
-<script src="index.js"></script>
-</body>
+    <div class="left">
+      <div class="pizza-options">
+        <div class="pizza-option" data-type="Пепперони">
+          <img src="assets/img/Пипирони.jpg" alt="Маргарита">
+          <div>Пепперони</div>
+        </div>
+        <div class="pizza-option" data-type="Маргарита">
+          <img src="assets/img/Маргарита.jpg" alt="Маргарита">
+          <div>Маргарита</div>
+        </div>
+        <div class="pizza-option" data-type="Баварская">
+          <img src="assets/img/Баварская.jpg" alt="Баварская">
+          <div>Баварская</div>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <h3>Выберите размер</h3>
+      <div class="size-toggle">
+        <input type="radio" name="size" id="small" value="маленькая" checked hidden>
+        <label for="small">Маленькая</label>
+        <input type="radio" name="size" id="large" value="большая" hidden>
+        <label for="large">Большая</label>
+      </div>
+      <h3>Добавить по вкусу</h3>
+      <div class="addons">
+        <div class="addon" data-name="сырный борт" data-price="189" data-cal="50">
+          <img src="assets/img/бортик.png" alt="">
+          <div>Сырный борт</div>
+          <small>189₽</small>
+        </div>
+        <div class="addon" data-name="сливочная моцарелла" data-price="99" data-cal="20">
+          <img src="assets/img/моцорелла.png" alt="">
+          <div>Сливочная моцарелла</div>
+          <small>99₽</small>
+        </div>
+        <div class="addon" data-name="чедер и пармезан" data-price="99" data-cal="20">
+          <img src="assets/img/чедр.png" alt="">
+          <div>Чедер и пармезан</div>
+          <small>99₽</small>
+        </div>
+      </div>
+      <button class="cart-button" id="cartButton">Добавить в корзину за 0₽ (0 Ккал)</button>
+    </div>
+  
+  <script src="index.js"></script>
+  </body>
 </html>
