@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/assets/styles/style.css">
+</head>
+
+<body>
+    <header class="header">
+    <div class="nav-container">
+        <div class="logo">
+        <a href="/index.html">🌟 Kuznetsova Lessons</a>
+        </div>
+        <nav class="nav">
+        <a href="/index.html">Главная</a>
+                <a href="/todos.html">Список дел</a>
+                <a href="/logout.html">Выйти</a>
+        </nav>
+    </div>
+    </header>
+
+
+    <main class="main">
+        <div class="user-card">
+            <div class="user-avatar">
+                <img src="src/assets/img/photo.jpg" alt="Фото пользователя">
+            </div>
+            <div class="user-details"  id="user-info">
+                <h2 class="user-name" data-user-name>Имя пользователя</h2>
+                <p><strong>Почта:</strong> <span data-user-email>email@example.com</span></p>
+                <p><strong>Возраст:</strong> <span data-user-age>18</span></p>
+            </div>
+        </div>
+    </main>
+
+    <div class="loader-wrapper" data-loading>
+        <img src="./src/assets/icons/loader.svg" alt="" class="loader">
+    </div>
+
+    <script src="src/pages/user.js" type="module"></script>
+</body>
+
+</html>
